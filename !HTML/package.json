@@ -1,0 +1,16 @@
+{
+  "name": "terra-prom",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  },
+  "scripts": {
+    "watch": "npx tailwindcss -i ./dev/assets/css/input.css -o ../assets/css/output.css --watch",
+    "build": "npx tailwindcss -i ./dev/assets/css/input.css -o ../assets/css/output.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

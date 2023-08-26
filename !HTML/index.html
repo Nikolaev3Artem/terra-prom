@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="../assets/css/output.css">
+</head>
+<body>
+
+    <section class="hero-section overflow-x-hidden pt-[175px] pb-[80px] mb-20">
+        <div class="container">
+            <!-- <span class="hor-line absolute top-[67px] right-[1100px] w-full"></span> -->
+            <h1 class="text-yellow lg:text-7xl md:text-6xl sm:text-4xl">ТЕРРА-ПРОМ</h1>
+            <h2 class="text-lightgrey lg:text-2xl md:text-xl sm:text-sm">постачальник  сипучих матеріалів</h2>
+            <!-- <span class="hor-line absolute top-[67px] right-[-1100px] w-full"></span> -->
+            <button class="btn btn-primary mt-[340px]">ЗАМОВИТИ ЗАРАЗ</button>
+        </div>
+    </section>
+    
+    <section class="production">
+        <div class="container">
+            <h2>Продукція</h2>
+            <div class="swiper production-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="relative flex flex-col justify-center align-center">
+                        <img src="../assets/img/production-1.png" alt="production-img" title="production-image" width="324px" height="100%">
+                        <h3 class="absolute bottom-[-25px] left-8 right-7 py-6 px-4 bg-yellow w-[80%] rounded-2xl">Пісок природній сіяний</h3>
+                    </div>       
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="relative flex flex-col justify-center">
+                        <img class="relative" src="../assets/img/production-2.png" alt="production-img" title="production-image" width="324px" height="100%">
+                        <h3 class="absolute bottom-[-25px] left-8 right-7 py-6 px-4 bg-yellow w-[80%] rounded-2xl">Відсіви піску (пісковик)</h3>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="relative flex flex-col justify-center">
+                        <img src="../assets/img/production-3.png" alt="production-img" title="production-image" width="324px" height="100%">
+                        <h3 class="absolute bottom-[-25px] left-8 right-7 py-6 px-4 bg-yellow w-[80%] rounded-2xl">Відсів піску міцний (синяк)</h3>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="relative flex flex-col justify-center">
+                        <img src="../assets/img/production-4.png" alt="production-img" title="production-image" width="324px" height="100%">
+                        <h3 class="absolute bottom-[-25px] left-8 right-7 py-6 px-4 bg-yellow w-[80%] rounded-2xl">Відсів піску міцний (синяк)</h3>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <h2>Фотогалерея</h2>
+        <div class="w-full flex flex-col gap-4  ">
+            <div class="flex justify-center gap-4 w-full">
+                <div><img src="../assets/img/gallery-img1.png" alt=""></div>
+                <div><img src="../assets/img/gallery-img2.png" alt=""></div>
+                <div><img src="../assets/img/gallery-img3.png" alt=""></div>
+            </div>
+            <div class="flex justify-center gap-4 w-full">
+                <div><img src="../assets/img/gallery-img4.png" alt=""></div>
+                <div><img src="../assets/img/gallery-img5.png" alt=""></div>
+            </div>   
+        </div>
+    </section>
+
+    <section class="why-us">
+        <div class="container">
+            <h2>Чому ми?</h2>
+            <div class="w-full flex flex-col gap-4">  
+                <div class="flex justify-center w-full mb-10">
+                    <div class="flex flex-col justify-center m-auto">
+                        <svg class="mx-auto" width="73" height="72" viewBox="0 0 73 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.25 24.75H65.75M5.48093 26.467L34.6958 64.3598C34.9081 64.6366 35.1813 64.8609 35.4941 65.0152C35.807 65.1695 36.1512 65.2498 36.5 65.2498C36.8488 65.2498 37.193 65.1695 37.5059 65.0152C37.8187 64.8609 38.0919 64.6366 38.3042 64.3598L67.5191 26.467C67.8063 26.093 67.9729 25.6405 67.9968 25.1695C68.0207 24.6985 67.9006 24.2314 67.6527 23.8303L57.7428 7.83422C57.5388 7.50318 57.2535 7.2298 56.9141 7.04004C56.5747 6.85028 56.1924 6.75044 55.8036 6.75H17.1964C16.8076 6.75044 16.4253 6.85028 16.0859 7.04004C15.7465 7.2298 15.4612 7.50318 15.2572 7.83422L5.34734 23.8303C5.09936 24.2314 4.97932 24.6985 5.00318 25.1695C5.02705 25.6405 5.19368 26.093 5.48093 26.467Z" stroke="#FFC738" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M56.75 9L50 24.75M50 24.75L36.5 6.75L23 24.75M50 24.75L36.5 63L23 24.75M16.25 9L23 24.75" stroke="#FFC738" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <h3 class="w-[80%] mx-auto mt-4">Суворі стандарти контролю якості</h3>
+                    </div>
+                    <div class="flex flex-col justify-center m-auto">
+                        <svg class="mx-auto" width="73" height="72" viewBox="0 0 73 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.75 14.625C20.75 11.5184 18.2316 9 15.125 9C12.0184 9 9.5 11.5184 9.5 14.625C9.5 17.7316 12.0184 20.25 15.125 20.25C18.2316 20.25 20.75 17.7316 20.75 14.625Z" stroke="#FFC738" stroke-width="4" stroke-miterlimit="10"/>
+                            <path d="M42.125 14.625C42.125 11.5184 39.6066 9 36.5 9C33.3934 9 30.875 11.5184 30.875 14.625C30.875 17.7316 33.3934 20.25 36.5 20.25C39.6066 20.25 42.125 17.7316 42.125 14.625Z" stroke="#FFC738" stroke-width="4" stroke-miterlimit="10"/>
+                            <path d="M63.5 14.625C63.5 11.5184 60.9816 9 57.875 9C54.7684 9 52.25 11.5184 52.25 14.625C52.25 17.7316 54.7684 20.25 57.875 20.25C60.9816 20.25 63.5 17.7316 63.5 14.625Z" stroke="#FFC738" stroke-width="4" stroke-miterlimit="10"/>
+                            <path d="M20.75 36C20.75 32.8934 18.2316 30.375 15.125 30.375C12.0184 30.375 9.5 32.8934 9.5 36C9.5 39.1066 12.0184 41.625 15.125 41.625C18.2316 41.625 20.75 39.1066 20.75 36Z" stroke="#FFC738" stroke-width="4" stroke-miterlimit="10"/>
+                            <path d="M42.125 36C42.125 32.8934 39.6066 30.375 36.5 30.375C33.3934 30.375 30.875 32.8934 30.875 36C30.875 39.1066 33.3934 41.625 36.5 41.625C39.6066 41.625 42.125 39.1066 42.125 36Z" stroke="#FFC738" stroke-width="4" stroke-miterlimit="10"/>
+                            <path d="M63.5 36C63.5 32.8934 60.9816 30.375 57.875 30.375C54.7684 30.375 52.25 32.8934 52.25 36C52.25 39.1066 54.7684 41.625 57.875 41.625C60.9816 41.625 63.5 39.1066 63.5 36Z" stroke="#FFC738" stroke-width="4" stroke-miterlimit="10"/>
+                            <path d="M20.75 57.375C20.75 54.2684 18.2316 51.75 15.125 51.75C12.0184 51.75 9.5 54.2684 9.5 57.375C9.5 60.4816 12.0184 63 15.125 63C18.2316 63 20.75 60.4816 20.75 57.375Z" stroke="#FFC738" stroke-width="4" stroke-miterlimit="10"/>
+                            <path d="M42.125 57.375C42.125 54.2684 39.6066 51.75 36.5 51.75C33.3934 51.75 30.875 54.2684 30.875 57.375C30.875 60.4816 33.3934 63 36.5 63C39.6066 63 42.125 60.4816 42.125 57.375Z" stroke="#FFC738" stroke-width="4" stroke-miterlimit="10"/>
+                            <path d="M63.5 57.375C63.5 54.2684 60.9816 51.75 57.875 51.75C54.7684 51.75 52.25 54.2684 52.25 57.375C52.25 60.4816 54.7684 63 57.875 63C60.9816 63 63.5 60.4816 63.5 57.375Z" stroke="#FFC738" stroke-width="4" stroke-miterlimit="10"/>
+                        </svg>
+                        <h3 class="w-[80%] mx-auto mt-4">Різноманітні типи будівельних матеріалів</h3>
+                    </div>
+                    <div class="flex flex-col justify-center m-auto">
+                        <svg class="mx-auto" width="73" height="72" viewBox="0 0 73 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M68 29.25H43.8125L36.5 6.75L29.1875 29.25H5L24.6875 42.75L17.0938 65.25L36.5 51.1875L55.9062 65.25L48.3125 42.75L68 29.25Z" stroke="#FFC738" stroke-width="4" stroke-linejoin="round"/>
+                        </svg>
+                        <h3 class="w-[80%] mx-auto mt-4">Багаторічний досвід роботи</h3>
+                    </div>
+                </div>
+                <div class="flex justify-center w-full">
+                    <div class="flex flex-col justify-center ml-auto">
+                        <svg class="mx-auto" width="73" height="72" viewBox="0 0 73 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M36.5 13.5C39.6066 13.5 42.125 10.9816 42.125 7.875C42.125 4.7684 39.6066 2.25 36.5 2.25C33.3934 2.25 30.875 4.7684 30.875 7.875C30.875 10.9816 33.3934 13.5 36.5 13.5Z" stroke="#FFC738" stroke-width="4" stroke-linejoin="round"/>
+                            <path d="M29.2198 38.5931C29.6277 36.0534 29.8105 33.5981 29.1495 31.9008C28.587 30.4411 27.3636 29.624 25.887 29.0672L12.875 24.8569C11.1875 24.2944 9.61109 23.3522 9.49999 21.4903C9.35937 19.0997 11.4687 17.5528 13.5781 18.1153C13.5781 18.1153 25.9531 22.4944 36.5 22.4944C47.0469 22.4944 59.2812 18.135 59.2812 18.135C61.8125 17.4319 63.5 19.4006 63.5 21.4805C63.5 23.4787 61.9531 24.1819 60.125 24.847L47.75 29.3344C46.625 29.7562 44.7969 30.6 44.0937 31.8909C43.25 33.4026 43.3906 36.0436 43.7984 38.5833L44.6281 42.75L49.8889 65.7984C50.2826 67.6476 49.003 69.3759 47.1608 69.6994C45.3186 70.0228 43.8125 68.7656 43.2669 66.9769L37.985 50.6742C37.7309 49.8923 37.5059 49.1016 37.31 48.3019L36.5 45L35.7547 48.0445C35.5184 49.0148 35.2466 49.9748 34.9391 50.9245L29.75 66.9628C29.1875 68.7698 27.7109 70.0214 25.8687 69.6994C24.0266 69.3773 22.7187 67.507 23.1322 65.7984L28.3902 42.7598L29.2198 38.5931Z" stroke="#FFC738" stroke-width="4" stroke-linejoin="round"/>
+                        </svg>
+                        <h3 class="w-[80%] mx-auto mt-4">Враховуємо індивідуальні потреби</h3>
+                    </div>
+                    <div class="flex flex-col justify-center  mr-auto">
+                        <svg class="mx-auto" width="73" height="72" viewBox="0 0 73 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.25 47.25L65.75 47.25C66.9926 47.25 68 46.2426 68 45V13.5C68 12.2574 66.9926 11.25 65.75 11.25L7.25 11.25C6.00736 11.25 5 12.2574 5 13.5L5 45C5 46.2426 6.00736 47.25 7.25 47.25Z" stroke="#FFC738" stroke-width="4" stroke-linejoin="round"/>
+                            <path d="M9.5 54H63.5M14 60.75H59" stroke="#FFC738" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M36.5 40.5C42.7132 40.5 47.75 35.4632 47.75 29.25C47.75 23.0368 42.7132 18 36.5 18C30.2868 18 25.25 23.0368 25.25 29.25C25.25 35.4632 30.2868 40.5 36.5 40.5Z" stroke="#FFC738" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M68 22.5C65.0163 22.5 62.1548 21.3147 60.045 19.205C57.9353 17.0952 56.75 14.2337 56.75 11.25M5 22.5C6.47737 22.5 7.94028 22.209 9.30519 21.6436C10.6701 21.0783 11.9103 20.2496 12.955 19.205C13.9996 18.1603 14.8283 16.9201 15.3936 15.5552C15.959 14.1903 16.25 12.7274 16.25 11.25M68 36C65.0163 36 62.1548 37.1853 60.045 39.295C57.9353 41.4048 56.75 44.2663 56.75 47.25M5 36C6.47737 36 7.94028 36.291 9.30519 36.8564C10.6701 37.4217 11.9103 38.2504 12.955 39.295C13.9996 40.3397 14.8283 41.5799 15.3936 42.9448C15.959 44.3097 16.25 45.7726 16.25 47.25" stroke="#FFC738" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <h3 class="w-[80%] mx-auto mt-4">Конкурентні ціни на продукцію</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form ">
+        <h2>Замовити дзвінок</h2>
+        <div class="bg-yellow py-12 px-16 lg:px-8 gap-4 flex flex-row  md:flex-col justify-start">
+            <div class="flex relative w-full">
+                <input name="name" id="name" type="text">
+                <label for="name">Ваше повне ім’я</label>
+            </div>
+            <div class="flex relative w-full">           
+                <input name="phone" id="phone" type="text">
+                <label for="phone">Ваш номер телефону</label>
+            </div>
+            <button class="btn btn-secondary">ЗАМОВИТИ</button>
+        </div>
+    </section>
+
+    <section class="about-us">
+        <div class="container flex flex-row w-full justify-center lg:flex-col">
+            <div class="relative w-[550px] h-[617px] lg:w-full lg:h-full">
+                <img class="" src="../assets/img/about-us.png" alt="" width="100%" height="100%">
+                <div class="absolute bottom-[-10px] right-[-10px] bg-yellow w-full h-full z-[-2]"></div>
+            </div>
+            <div class="w-[45%] mx-auto pl-4 lg:w-full lg:mt-8">
+                <h2 class="flex justify-start">Про нас</h2>
+                <p class="mb-6">Компанія Терра-Пром є експертом  у постачанні піскосумішей. Піскосуміші 
+                    є популярними матеріалами в будівництві завдяки своїм численним перевагам.
+                </p>
+                <p class="mb-6">
+                    Піскосуміші менш затратні, ніж традиційний цементний бетон. Це робить їх 
+                    більш вигідними для будівництва на великих площах, де економія матеріалів 
+                    грає важливу роль. Піскосуміші легко змішуються, це робить їх ідеальними для 
+                    різних будівельних завдань, включаючи лиття фундаментів, стяжки підлоги, а 
+                    також для виготовлення блоків і цегли.
+                </p>
+                <p class="mb-6">
+                    Піскосуміші мають високу морозостійкість, що робить їх ідеальними для 
+                    будівництва в зимових умовах. Однією з переваг піскосумішей є висока міцність 
+                    і довговічність, а це важливо для витримки великих навантажень та впливу 
+                    навколишнього середовища, наприклад, фундаменту та дорожнього покриття.
+                </p>
+                <p class="mb-6">
+                    За допомогою піскосумішей можна створювати різноманітні текстури та
+                     візерунки на поверхнях, що дозволяє використовувати їх для декоративних 
+                     елементів у будівлі, таких як облицювання стін або створення оригінальних 
+                     доріжок.
+                </p>
+                <p class="mb-6">
+                    Наша компанія пропонує постачання будівельних матеріалів за допомогою самоскидів. 
+                    Ми забезпечуємо своїх клієнтів якісною продукцією за помірними цінами. Постачаємо 
+                    будівельні суміші, такі як: пісок, щебінь, гранітний відсів, глина та ґрунт для 
+                    відсипки ділянок з доставкою на об’єкти швидко та ефективно. Ми пропонуємо послуги
+                     без посередників. Без зайвих зусиль готові забезпечити замовника необхідними сипучими 
+                     матеріалами з кар’єру.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="container">
+            <h2>Товари</h2>
+            <div class="swiper products-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="w-\[40\%\]]"><img src="../assets/img/products-img1.png" alt=""></div>
+                    <div class="ml-4">
+                        <h3>Пісковик міцний фракційний 40-100</h3>
+                        <p class="px-3 py-2 bg-yellow w-fit rounded-xl">450 грн за тонну з ПДВ</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="w-\[40\%\]]"><img src="../assets/img/products-img2.png" alt=""></div>
+                    <div class="ml-4">
+                        <h3>Пісковик міцний фракційний 40-100</h3>
+                        <p class="px-3 py-2 bg-yellow w-fit rounded-xl">450 грн за тонну з ПДВ</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="w-\[40\%\]]"><img src="../assets/img/products-img3.png" alt=""></div>
+                    <div class="ml-4">
+                        <h3>Пісковик міцний фракційний 40-100</h3>
+                        <p class="px-3 py-2 bg-yellow w-fit rounded-xl">450 грн за тонну з ПДВ</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="we-deserve">
+        <div class="container">
+            <h2>Нам довіряють</h2>
+            <div class="w-full justify-center">
+                <div class="flex flex-row justify-center items-center gap-4 mb-4">
+                    <div><img src="../assets/img/Rectangle 17.png" alt=""></div>
+                    <div><img src="../assets/img/Rectangle 17.png" alt=""></div>
+                    <div><img src="../assets/img/Rectangle 17.png" alt=""></div>
+                    <div><img src="../assets/img/Rectangle 17.png" alt=""></div>
+                </div>
+                <div class="flex flex-row justify-center items-center gap-4">
+                    <div><img src="../assets/img/Rectangle 17.png" alt=""></div>
+                    <div><img src="../assets/img/Rectangle 17.png" alt=""></div>
+                    <div><img src="../assets/img/Rectangle 17.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="h-fit bg-black flex flex-row md:flex-col">
+        <div id="map" class="w-[40%] h-[349px] bg-white z-2 md:w-full"></div>
+        <div class="w-[50%] h-[349px] flex flex-col justify-start gap-6 pl-10 pt-10 md:w-full">
+            <h2 class="text-white text-start m-0">Контакти</h2>
+            <div class="flex flex-row">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M35.2344 29.2188C33.9937 27.9688 30.9891 26.1446 29.5312 25.4094C27.6328 24.4532 27.4766 24.3751 25.9844 25.4837C24.9891 26.2235 24.3273 26.8844 23.1625 26.636C21.9976 26.3876 19.4664 24.9868 17.25 22.7774C15.0336 20.568 13.5516 17.9633 13.3023 16.8024C13.0531 15.6415 13.725 14.9876 14.4578 13.9899C15.4906 12.5837 15.4125 12.3493 14.5297 10.4508C13.8414 8.97428 11.9641 5.99772 10.7094 4.76334C9.36718 3.43756 9.36718 3.67194 8.50233 4.03131C7.79825 4.32755 7.12277 4.68765 6.48436 5.10709C5.23436 5.93756 4.54061 6.62741 4.05546 7.66413C3.5703 8.70084 3.35233 11.1313 5.8578 15.6829C8.36327 20.2344 10.1211 22.5618 13.7594 26.1899C17.3976 29.818 20.1953 31.7688 24.2851 34.0626C29.3445 36.8962 31.2851 36.3438 32.325 35.8594C33.3648 35.3751 34.0578 34.6876 34.8898 33.4376C35.3104 32.8002 35.6713 32.1255 35.968 31.4219C36.3281 30.5602 36.5625 30.5602 35.2344 29.2188Z" stroke="#FFC738" stroke-width="4" stroke-miterlimit="10"/>
+                </svg>
+                <h3 class="text-white text-start self-center ml-2"><a href="tel://+38 000 000 00 00">+38 000 000 00 00</a></h3>
+            </div>
+            <div class="flex flex-row">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M33.125 7.5H6.875C5.14911 7.5 3.75 8.89911 3.75 10.625V29.375C3.75 31.1009 5.14911 32.5 6.875 32.5H33.125C34.8509 32.5 36.25 31.1009 36.25 29.375V10.625C36.25 8.89911 34.8509 7.5 33.125 7.5Z" stroke="#FFC738" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8.75 12.5L20 21.25L31.25 12.5" stroke="#FFC738" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <h3 class="text-white text-start self-center ml-2">user@gmail.com</h3>
+            </div>
+            <div class="flex flex-row">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 3.75C13.7891 3.75 8.75 8.54609 8.75 14.4531C8.75 21.25 16.25 32.0211 19.0039 35.7414C19.1182 35.8985 19.268 36.0262 19.4412 36.1144C19.6143 36.2025 19.8058 36.2484 20 36.2484C20.1942 36.2484 20.3857 36.2025 20.5588 36.1144C20.732 36.0262 20.8818 35.8985 20.9961 35.7414C23.75 32.0227 31.25 21.2555 31.25 14.4531C31.25 8.54609 26.2109 3.75 20 3.75Z" stroke="#FFC738" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20 18.75C22.0711 18.75 23.75 17.0711 23.75 15C23.75 12.9289 22.0711 11.25 20 11.25C17.9289 11.25 16.25 12.9289 16.25 15C16.25 17.0711 17.9289 18.75 20 18.75Z" stroke="#FFC738" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <h3 class="text-white text-start self-center ml-2">м. Львів, вул. ....</h3>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
