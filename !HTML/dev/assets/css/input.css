@@ -43,7 +43,7 @@
         @apply mb-40
     }
     .container{
-        @apply max-w-[1440px] flex flex-col justify-center
+        @apply max-w-[1440px] flex flex-col justify-center items-center
     }
     .btn{
         @apply mx-auto px-[87px] py-5 rounded-2xl font-bold text-[16px] lg:text-[12px] sm:w-full text-center
@@ -77,10 +77,12 @@
     border: 11.5px solid white;
 }
 
-input:focus-within ~ label{
+input:focus-within ~ label, input:not(:placeholder-shown):valid ~ label{
     position: absolute;
-    top: -2px;
+    top: -35px;
     transition: 0.2s ease-out;
+    color: black;
+    font-size: 20px;
 }
 
 #map{

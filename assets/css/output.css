@@ -587,6 +587,7 @@ section {
   display: flex;
   max-width: 1440px;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
@@ -696,10 +697,6 @@ label {
   margin: 0px;
 }
 
-.m-auto {
-  margin: auto;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -711,6 +708,10 @@ label {
 
 .mb-20 {
   margin-bottom: 5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .mb-6 {
@@ -725,24 +726,12 @@ label {
   margin-left: 1rem;
 }
 
-.ml-auto {
-  margin-left: auto;
-}
-
-.mr-auto {
-  margin-right: auto;
-}
-
 .mt-4 {
   margin-top: 1rem;
 }
 
 .mt-\[340px\] {
   margin-top: 340px;
-}
-
-.mb-4 {
-  margin-bottom: 1rem;
 }
 
 .flex {
@@ -764,6 +753,10 @@ label {
 
 .h-full {
   height: 100%;
+}
+
+.w-\[300px\] {
+  width: 300px;
 }
 
 .w-\[40\%\] {
@@ -795,12 +788,20 @@ label {
   width: 100%;
 }
 
+.max-w-5xl {
+  max-width: 64rem;
+}
+
 .flex-row {
   flex-direction: row;
 }
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-center {
@@ -821,6 +822,10 @@ label {
 
 .gap-6 {
   gap: 1.5rem;
+}
+
+.gap-y-10 {
+  row-gap: 2.5rem;
 }
 
 .self-center {
@@ -908,6 +913,10 @@ label {
   text-align: start;
 }
 
+.align-middle {
+  vertical-align: middle;
+}
+
 .text-lightgrey {
   --tw-text-opacity: 1;
   color: rgb(248 247 243 / var(--tw-text-opacity));
@@ -937,10 +946,21 @@ label {
   border: 11.5px solid white;
 }
 
-input:focus-within ~ label{
+input:not(:-moz-placeholder-shown):valid ~ label{
   position: absolute;
-  top: -2px;
+  top: -35px;
+  -moz-transition: 0.2s ease-out;
   transition: 0.2s ease-out;
+  color: black;
+  font-size: 20px;
+}
+
+input:focus-within ~ label, input:not(:placeholder-shown):valid ~ label{
+  position: absolute;
+  top: -35px;
+  transition: 0.2s ease-out;
+  color: black;
+  font-size: 20px;
 }
 
 #map{
@@ -996,6 +1016,18 @@ input:focus-within ~ label{
 }
 
 @media (max-width: 768px) {
+  .md\:bottom-0 {
+    bottom: 0px;
+  }
+
+  .md\:left-0 {
+    left: 0px;
+  }
+
+  .md\:right-0 {
+    right: 0px;
+  }
+
   .md\:w-full {
     width: 100%;
   }
